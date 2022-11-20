@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeforcesProblems.Sandbox", "CodeforcesProblems.Sandbox\CodeforcesProblems.Sandbox.csproj", "{5A609E14-A532-4EB4-BF58-DFB359403A12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contests", "Contests\Contests.csproj", "{64DBF8C5-4A2E-4530-81EC-B6B05B42F269}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A609E14-A532-4EB4-BF58-DFB359403A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A609E14-A532-4EB4-BF58-DFB359403A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A609E14-A532-4EB4-BF58-DFB359403A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A609E14-A532-4EB4-BF58-DFB359403A12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64DBF8C5-4A2E-4530-81EC-B6B05B42F269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DBF8C5-4A2E-4530-81EC-B6B05B42F269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DBF8C5-4A2E-4530-81EC-B6B05B42F269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DBF8C5-4A2E-4530-81EC-B6B05B42F269}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
