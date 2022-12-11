@@ -1,16 +1,16 @@
 ﻿using NUnit.Framework;
 
-namespace Contests._2022_11_18.Round_834;
+namespace Contests.Date_2022_11_25;
 
 [TestFixture]
-public class P00_Yes_Yes
+public class Contest_835
 {
     [Test]
     [TestCase(12,
-        new [] { "YES", "esYes", "codeforces", "es", "se", "YesY", "esYesYesYesYesYesYe", "seY", "Yess",
+        new [] { "a", "sururu", "errorgorn", "es", "se", "YesY", "esYesYesYesYesYesYe", "seY", "Yess",
             "sY", "o", "Yes" },
-        new [] { "no", "yes", "no", "yes", "no", "yes", "yes", "no", "no", "yes", "no", "yes" })]
-    public void Calculate(int t, string[] responses, string[] expected)
+        new [] { "aa", "suurruurruus", "no", "yes", "no", "yes", "yes", "no", "no", "yes", "no", "yes" })]
+    public void P00_SSeeeeiinngg_DDoouubbllee(int t, string[] responses, string[] expected)
     {
         var ret = new List<string>(t);
         var markers = new List<char> { 'Y', 'e', 's' };
