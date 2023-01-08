@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace CodeforcesProblems.Sandbox;
+﻿namespace CodeforcesProblems.Sandbox;
 
 public static class Program
 {
@@ -9,27 +7,28 @@ public static class Program
         var testCasesCount = ReadIntLine();
         for (var j = 0; j < testCasesCount[0]; j++)
         {
-            var numbers = ReadIntLine();
             var str = Console.ReadLine();
+            var numbers = ReadIntLine();
 
             var ret = "NO";
+        
+            numbers.Sort();
 
-            var letterSet = new HashSet<string>();
-
-            for (var i = 0; i < numbers[0] - 1; i++)
+            // Numbers contained 2 items as least.
+            if (numbers.Last() != numbers.First())
             {
-                var substr = str.Substring(i, 2);
-                if (letterSet.Contains(substr))
-                {
-                    ret = "YES";
-                    break;
-                }
-
-                if (i > 0)
-                    letterSet.Add(str.Substring(i - 1, 2));
+                ret = "YES";
+                var tmp = numbers.First();
+                numbers[0] = numbers.Last();
+                numbers[^1] = tmp;
             }
-            
+
             Console.WriteLine(ret);
+            if (ret == "YES")
+            {
+                for (var i = 0; i < numbers.Count; i++)
+                    Console.Write(i == numbers.Count - 1 ? $"{numbers[i]}\n" : $"{numbers[i]} ");
+            }
         }
     }
     
